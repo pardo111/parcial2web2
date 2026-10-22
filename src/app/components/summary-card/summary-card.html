@@ -1,0 +1,5 @@
+<article class="rounded-xl border border-slate-200 bg-white p-4 max-[460px]:p-3">
+  <div class="flex items-center justify-between text-[10px] font-medium text-slate-500"><span>{{ label }}</span><i class="grid size-7 place-items-center rounded-lg not-italic" [class]="'grid size-7 place-items-center rounded-lg not-italic ' + iconClasses">{{ icon }}</i></div>
+  <div class="my-3 flex items-center gap-2 text-2xl font-bold text-slate-800 max-[460px]:text-xl">{{ value }} @if (unit) {<span class="text-[11px]">{{ unit }}</span>} @if (trend) {<span class="rounded bg-emerald-50 px-1.5 py-1 text-[8px] text-emerald-700">{{ trend }}</span>}</div>
+  <small class="text-[9px] text-slate-400">{{ note }}</small>
+</article>
